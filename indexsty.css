@@ -1,0 +1,382 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/spiderman.png");
+    background-color: #1a0038;
+    color: #ffffff;
+}
+
+header {
+    background-color: #11001c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid #e71d36;
+}
+
+header h1 {
+    margin: 0;
+    color: #fee440;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(58, 198, 233);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s, transform 0.5s ease, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.05);
+    background-color: #ec940f;
+    color: white;
+    border-radius: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(26, 0, 56, 0.8);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 3px solid #e71d36;
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: large;
+}
+
+section h2 {
+    color: #00b4d8;
+    text-align: center;
+    border-bottom: 2px solid #fee440;
+    padding-bottom: 10px;
+}
+
+#achievements ul li {
+    color: #ffffff;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #11001c;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 3px solid #e71d36;
+}
+
+.profile-pic {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e71d36;
+    box-shadow: 0 0 15px #00b4d8;
+}
+
+.birthplace-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover p {
+    font-size: 18px;
+    color: rgb(80, 214, 68);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.skill {
+    background-color: rgba(231, 29, 54, 0.2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    border: 1px solid #e71d36;
+    transition: all 0.3s;
+}
+
+.skill:hover {
+    background-color: rgba(231, 29, 54, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 3px 5px rgba(0, 180, 216, 0.5);
+}
+
+.cv-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #e71d36;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.cv-link:hover {
+    background-color: #00b4d8;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #fee440;
+}
+
+.content-wrapper {
+    padding-bottom: 50px;
+}
+
+h2::before, h2::after {
+    content: "🕸️";
+    color: #fee440;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+#text-analyzer {
+    padding: 20px;
+    background-color: rgba(26, 0, 56, 0.8);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    color: #c0b1b1; 
+    box-sizing: border-box;
+}
+
+.analyzer-container {
+    margin: 20px 0;
+}
+
+#textInput {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    resize: vertical;
+    color: black;
+}
+
+.results-container {
+    margin-top: 20px;
+    color: #000;
+    font-size: 16px;
+}
+
+.stats-container, .count-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.stats-container h3, .count-container h3 {
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.stats-container p, .count-container p {
+    margin: 5px 0;
+    color: #000;
+}
+
+.results-container > p {
+    color: #000;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: #1a0038;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    section h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .birthplace-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skill {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .cv-link {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #textInput {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .results-container {
+        font-size: 14px;
+    }
+
+    footer {
+        display: block;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+
+    footer p:last-child {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .gallery-item img {
+        width: 180px;
+        height: 130px;
+    }
+
+    .skill {
+        font-size: 12px;
+    }
+
+    #textInput {
+        font-size: 12px;
+    }
+
+    .results-container {
+        font-size: 12px;
+    }
+}
